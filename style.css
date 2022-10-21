@@ -24,10 +24,332 @@ body {
 }
 
 .obal {
-	max-width: 960px; /* obsah stránky je omezený do pruhu širokého max. 960px */
+	max-width: 539px; /* obsah stránky je omezený do pruhu širokého max. 960px */
 	margin: 0 auto; /* pruh je na stránce vycentrovaný */
 	background: white;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (min-width: 700px) {
+	.obal {
+		max-width: 700px; /* obsah stránky je omezený do pruhu širokého max. 960px */
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.obal {
+		max-width: 960px; /* obsah stránky je omezený do pruhu širokého max. 960px */
+	}
+}
+
+
 /* ----- zde začni psát vlastní CSS ----- */
+
+.menu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 20px;
+}
+
+.menu li + li {
+	border-top: 1px solid #e5e5e5;
+}
+
+@media screen and (min-width: 700px) {
+	.menu li + li {
+		border-top: 0;
+	}
+}
+
+.menu li {
+	text-align: center;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #25133d;
+	padding: 10px 0;
+	display: block;
+}
+
+.menu li a:hover {
+	background-color: #48418e;
+	color: white;
+	padding: 10px 0;
+}
+
+.menu li:first-child {
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+@media screen and (min-width: 700px) {
+	.menu {
+		margin: 0;
+		padding: 0 40px;
+		display: flex;
+		list-style-type: none;
+		font-size: 16px;
+	}
+
+	.menu li {
+		color: #25133d;
+		flex: 0 0 auto;
+		padding: 0;
+	}
+
+	.menu li a {
+		text-decoration: none;
+		color: #25133d;
+		padding: 22px 10px;
+	}
+
+	.menu li a:hover {
+		background-color: #48418e;
+		color: white;
+		padding: 22px 10px;
+	}
+
+	.menu li:first-child {
+		font-weight: bold;
+		padding: 22px 10px 20px 0;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.menu {
+		margin: 0 40px;
+		padding: 0;
+		display: flex;
+		list-style-type: none;
+	}
+
+	.menu li {
+		color: #25133d;
+		flex: 0 0 auto;
+	}
+
+	.menu li:first-child {
+		padding: 22px 35px 22px 0;
+	}
+
+	.menu li a {
+		text-decoration: none;
+		padding: 22px 35px;
+		color: #25133d;
+	}
+
+	.menu li a:hover {
+		background-color: #48418e;
+		color: white;
+		padding: 22px 35px;
+	}
+}
+
+.hero {
+	padding-left: 30px;
+	background-color: white;
+    background-image: url(images/pozadi.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	color: white;
+	min-height: 450px;
+}
+
+@media screen and (min-width: 700px) {
+	.hero {
+		padding-left: 0;
+	}
+
+	.hero .leva {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.hero {
+		padding-left: 40px;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.hero .leva {
+	margin: auto 0;
+}
+
+.hero .prava {
+	margin-top: 20px;
+}
+
+@media screen and (min-width: 960px) {
+	.hero .prava {
+		flex: 0 0 45%;
+		margin-top: 0;
+		align-self: flex-end;
+	}
+
+	.hero .leva {
+		flex: 0 0 55%;
+		align-self: center;
+		text-align: left;
+	}
+}
+
+.hero h1 {
+	/* margin: 0; */
+	margin: 0 0 20px 0;
+	font-size: 90px;
+	font-weight: 400;
+}
+
+.hero p {
+	font-size: 36px;
+	font-weight: 300;
+	margin: 20px 0 36px 0;
+}
+
+@media screen and (min-width: 960px) {
+	.hero p {
+		font-size: 36px;
+		font-weight: 300;
+		margin: 20px 0 20px 0;
+	}
+}
+
+.hero img {
+	max-width: 75%;
+	display: block;
+	margin-left: auto;
+}
+
+@media screen and (min-width: 960px) {
+	.hero img {
+		max-width: 100%;
+		display: block;
+		margin-left: auto;
+	}
+}
+
+.hero .button + .button {
+	margin-top: 10px;
+}
+
+.hero .button + .button {
+	margin-left: 22px;
+}
+
+@media screen and (min-width: 960px) {
+	.hero .button + .button {
+		margin-left: 22px;
+	}
+
+	.hero .button + .button {
+		margin-top: 0px;
+	}
+}
+
+.button {
+	display: inline;
+}
+
+.button a {
+	border: 1px solid white;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+	padding: 16px 30px;
+	display: inline-block;
+}
+
+.button a:hover {
+	background-color: #48418f;
+	border-radius: 10px;
+}
+
+@media screen and (min-width: 700px) {
+	.obsah {
+		margin: 40px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.obsah {
+		display: flex;
+		justify-content: space-between;
+		margin: 20px 40px;
+	}
+}
+
+.col {
+	text-align: center;
+	margin: 20px 0;
+}
+
+@media screen and (min-width: 700px) {
+	.col {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.col-levy {
+		flex: 0 0 20%;
+		text-align: left;
+	}
+
+	.col-pravy {
+		flex: 0 1 80%;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.col {
+		display: block;
+		flex: 0 0 calc((100% - 120px) / 3);
+		margin: 20px;
+	}
+
+	.col-levy {
+		text-align: center;
+	}
+}
+
+.nazev {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.icon {
+	max-width: 100px;
+	border-radius: 50%;
+}
+
+@media screen and (min-width: 700px) {
+	.icon {
+		max-width: 100px;
+		border-radius: 50%;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.icon {
+		max-width: 70px;
+		border-radius: 50%;
+	}
+}
+
+.paticka {
+	background-color: #48418f;
+}
+
+.obsah-paticka {
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	padding: 1px 0;
+}

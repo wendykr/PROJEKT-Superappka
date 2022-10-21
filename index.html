@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Superappka (standardní varianta)</title>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,47 +13,75 @@
 	<div class="obal">
 
 		<!-- menu -->
-		<ul>
-			<li>SUPER APPKA</li>
-			<li><a href="#">Úžasný design</a></li>
-			<li><a href="#">Boží funkce</a></li>
-			<li><a href="#">Zdarma ke stažení</a></li>
-		</ul>
+		<navigation>
+			<ul class="menu">
+				<li>SUPER APPKA</li>
+				<li><a href="#">Úžasný design</a></li>
+				<li><a href="#">Boží funkce</a></li>
+				<li><a href="#">Zdarma ke stažení</a></li>
+			</ul>
+		</navigation>
 
+		<section class="hero">
+			<!-- hero sekce / banner -->
+			<div class="leva">
+				<h1>Super Appka</h1>
 
-		<!-- hero sekce / banner -->
-		<h1>Super Appka</h1>
+				<p>
+					Úžasná mobilní aplikace,
+					<br> která Ti změní život.
+				</p>
 
-		<p>
-			Úžasná mobilní aplikace,
-			<br> která Ti změní život.
-		</p>
+				<div class="button download">
+					<a href="#">Stáhnout zdarma</a>
+				</div>
+				<div class="button info">
+					<a href="#">Více informací</a>
+				</div>
+			</div>
 
-		<a href="#">Stáhnout zdarma</a>
-		<a href="#">Více informací</a>
+			<div class="prava img">
+				<img src="images/telefon.png" alt="Telefon">
+			</div>
+		</section>
 
-		<img src="images/telefon.png" alt="Telefon">
+		<section class="obsah">
+			<!-- obsah se 3 sloupci -->
+			<div class="col prvni">
+				<div class="col-levy">
+					<img class="icon" src="images/letadlo.svg" alt="Letadlo">
+				</div>
+				<div class="col-pravy">
+					<h2 class="nazev">Cestuj po světě</h2>
+					<p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis corporis ipsa eveniet deleniti.</p>
+				</div>
+			</div>
+			<div class="col druhy">
+				<div class="col-levy">
+					<img class="icon" src="images/bubliny.svg" alt="Bubliny">
+				</div>
+				<div class="col-pravy">	
+					<h2 class="nazev">Chatuj s přáteli</h2>
+					<p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis corporis ipsa eveniet deleniti.</p>
+				</div>
+			</div>
+			<div class="col treti">
+				<div class="col-levy">
+					<img class="icon" src="images/mapa.svg" alt="Mapa">
+				</div>
+				<div class="col-pravy">
+					<h2 class="nazev">Zažij dobrodružství</h2>
+					<p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis corporis ipsa eveniet deleniti.</p>
+				</div>
+			</div>
+		</section>
 
-
-
-
-		<!-- obsah se 3 sloupci -->
-		<img src="images/letadlo.svg" alt="Letadlo">
-		<h2>Cestuj po světě</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis corporis ipsa eveniet deleniti.</p>
-
-		<img src="images/bubliny.svg" alt="Bubliny">
-		<h2>Chatuj s přáteli</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis corporis ipsa eveniet deleniti.</p>
-
-		<img src="images/mapa.svg" alt="Mapa">
-		<h2>Zažij dobrodružství</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis corporis ipsa eveniet deleniti.</p>
-
-
-		<!-- patička -->
-		<p>&copy;2020, Czechitas</p>
-
+		<footer class="paticka">
+			<!-- patička -->
+			<div class="obsah-paticka">
+				<p>&copy;2020, Czechitas</p>
+			</div>
+		</footer>
 
 	</div><!-- konec obalu -->
 
