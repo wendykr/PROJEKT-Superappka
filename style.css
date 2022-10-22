@@ -24,7 +24,7 @@ body {
 }
 
 .obal {
-	max-width: 539px; /* obsah stránky je omezený do pruhu širokého max. 960px */
+	max-width: 539px; /* obsah stránky je omezený do pruhu širokého max. 539px */
 	margin: 0 auto; /* pruh je na stránce vycentrovaný */
 	background: white;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -32,7 +32,7 @@ body {
 
 @media screen and (min-width: 700px) {
 	.obal {
-		max-width: 700px; /* obsah stránky je omezený do pruhu širokého max. 960px */
+		max-width: 700px; /* obsah stránky je omezený do pruhu širokého max. 700px */
 	}
 }
 
@@ -52,6 +52,23 @@ body {
 	font-size: 20px;
 }
 
+@media screen and (min-width: 700px) {
+	.menu {
+		padding: 0 40px;
+		display: flex;
+		font-size: 16px;
+		justify-content: space-evenly;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.menu {
+		margin: 0 40px;
+		padding: 0;
+		justify-content: start;
+	}
+}
+
 .menu li + li {
 	border-top: 1px solid #e5e5e5;
 }
@@ -63,20 +80,45 @@ body {
 }
 
 .menu li {
+	color: #25133d;
 	text-align: center;
 }
 
-.menu li a {
+.menu a {
 	text-decoration: none;
 	color: #25133d;
 	padding: 10px 0;
 	display: block;
 }
 
-.menu li a:hover {
+@media screen and (min-width: 700px) {
+	.menu a {
+		padding: 22px 10px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.menu a {
+		padding: 22px 35px;
+	}
+}
+
+.menu a:hover {
 	background-color: #48418e;
 	color: white;
 	padding: 10px 0;
+}
+
+@media screen and (min-width: 700px) {
+	.menu a:hover {
+		padding: 22px 10px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.menu a:hover {
+		padding: 22px 35px;
+	}
 }
 
 .menu li:first-child {
@@ -85,87 +127,25 @@ body {
 }
 
 @media screen and (min-width: 700px) {
-	.menu {
-		margin: 0;
-		padding: 0 40px;
-		display: flex;
-		list-style-type: none;
-		font-size: 16px;
-	}
-
-	.menu li {
-		color: #25133d;
-		flex: 0 0 auto;
-		padding: 0;
-	}
-
-	.menu li a {
-		text-decoration: none;
-		color: #25133d;
-		padding: 22px 10px;
-	}
-
-	.menu li a:hover {
-		background-color: #48418e;
-		color: white;
-		padding: 22px 10px;
-	}
-
 	.menu li:first-child {
-		font-weight: bold;
 		padding: 22px 10px 20px 0;
 	}
 }
 
 @media screen and (min-width: 960px) {
-	.menu {
-		margin: 0 40px;
-		padding: 0;
-		display: flex;
-		list-style-type: none;
-	}
-
-	.menu li {
-		color: #25133d;
-		flex: 0 0 auto;
-	}
-
 	.menu li:first-child {
 		padding: 22px 35px 22px 0;
-	}
-
-	.menu li a {
-		text-decoration: none;
-		padding: 22px 35px;
-		color: #25133d;
-	}
-
-	.menu li a:hover {
-		background-color: #48418e;
-		color: white;
-		padding: 22px 35px;
 	}
 }
 
 .hero {
-	padding-left: 30px;
 	background-color: white;
-    background-image: url(images/pozadi.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+	background-image: url(images/pozadi.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	color: white;
 	min-height: 450px;
-}
-
-@media screen and (min-width: 700px) {
-	.hero {
-		padding-left: 0;
-	}
-
-	.hero .leva {
-		text-align: center;
-	}
 }
 
 @media screen and (min-width: 960px) {
@@ -177,7 +157,15 @@ body {
 }
 
 .hero .leva {
-	margin: auto 0;
+	text-align: center;
+}
+
+@media screen and (min-width: 960px) {
+	.hero .leva {
+		flex: 0 0 55%;
+		align-self: center;
+		text-align: left;
+	}
 }
 
 .hero .prava {
@@ -190,19 +178,18 @@ body {
 		margin-top: 0;
 		align-self: flex-end;
 	}
-
-	.hero .leva {
-		flex: 0 0 55%;
-		align-self: center;
-		text-align: left;
-	}
 }
 
 .hero h1 {
-	/* margin: 0; */
 	margin: 0 0 20px 0;
-	font-size: 90px;
+	font-size: 60px;
 	font-weight: 400;
+}
+
+@media screen and (min-width: 960px) {
+	.hero h1 {
+		font-size: 90px;
+	}
 }
 
 .hero p {
@@ -213,9 +200,7 @@ body {
 
 @media screen and (min-width: 960px) {
 	.hero p {
-		font-size: 36px;
-		font-weight: 300;
-		margin: 20px 0 20px 0;
+		margin: 20px 0;
 	}
 }
 
@@ -228,26 +213,17 @@ body {
 @media screen and (min-width: 960px) {
 	.hero img {
 		max-width: 100%;
-		display: block;
-		margin-left: auto;
 	}
 }
 
 .hero .button + .button {
 	margin-top: 10px;
-}
-
-.hero .button + .button {
 	margin-left: 22px;
 }
 
 @media screen and (min-width: 960px) {
 	.hero .button + .button {
-		margin-left: 22px;
-	}
-
-	.hero .button + .button {
-		margin-top: 0px;
+		margin-top: 0;
 	}
 }
 
@@ -267,7 +243,6 @@ body {
 
 .button a:hover {
 	background-color: #48418f;
-	border-radius: 10px;
 }
 
 @media screen and (min-width: 700px) {
@@ -296,15 +271,6 @@ body {
 		align-items: center;
 		gap: 10px;
 	}
-
-	.col-levy {
-		flex: 0 0 20%;
-		text-align: left;
-	}
-
-	.col-pravy {
-		flex: 0 1 80%;
-	}
 }
 
 @media screen and (min-width: 960px) {
@@ -313,9 +279,24 @@ body {
 		flex: 0 0 calc((100% - 120px) / 3);
 		margin: 20px;
 	}
+}
 
+@media screen and (min-width: 700px) {
+	.col-levy {
+		flex: 0 0 20%;
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: 960px) {
 	.col-levy {
 		text-align: center;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.col-pravy {
+		flex: 0 1 80%;
 	}
 }
 
@@ -329,17 +310,9 @@ body {
 	border-radius: 50%;
 }
 
-@media screen and (min-width: 700px) {
-	.icon {
-		max-width: 100px;
-		border-radius: 50%;
-	}
-}
-
 @media screen and (min-width: 960px) {
 	.icon {
 		max-width: 70px;
-		border-radius: 50%;
 	}
 }
 
@@ -348,8 +321,13 @@ body {
 }
 
 .obsah-paticka {
-	font-size: 14px;
 	color: white;
 	text-align: center;
 	padding: 1px 0;
+}
+
+@media screen and (min-width: 700px) {
+	.obsah-paticka {
+		font-size: 14px;
+	}
 }
