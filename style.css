@@ -19,26 +19,26 @@ body {
 	background-color: #e5e5e5;
 	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 1rem; /*16px*/
 	line-height: 1.5;
 }
 
 .obal {
-	max-width: 539px; /* obsah stránky je omezený do pruhu širokého max. 539px */
+	max-width: 33.6875rem; /* obsah stránky je omezený do pruhu širokého max. 539px */
 	margin: 0 auto; /* pruh je na stránce vycentrovaný */
 	background: white;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.2); /*20px*/
 }
 
 @media screen and (min-width: 700px) {
 	.obal {
-		max-width: 700px; /* obsah stránky je omezený do pruhu širokého max. 700px */
+		max-width: 43.75rem; /* obsah stránky je omezený do pruhu širokého max. 700px */
 	}
 }
 
 @media screen and (min-width: 960px) {
 	.obal {
-		max-width: 960px; /* obsah stránky je omezený do pruhu širokého max. 960px */
+		max-width: 60rem; /* obsah stránky je omezený do pruhu širokého max. 960px */
 	}
 }
 
@@ -49,21 +49,21 @@ body {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	font-size: 20px;
+	font-size: 1.25rem; /*20px*/
 }
 
 @media screen and (min-width: 700px) {
 	.menu {
-		padding: 0 40px;
+		padding: 0 2.5rem; /*40px*/
 		display: flex;
-		font-size: 16px;
+		font-size: 1rem; /*16px*/
 		justify-content: space-evenly;
 	}
 }
 
 @media screen and (min-width: 960px) {
 	.menu {
-		margin: 0 40px;
+		margin: 0 2.5rem; /*40px*/
 		padding: 0;
 		justify-content: start;
 	}
@@ -87,54 +87,54 @@ body {
 .menu a {
 	text-decoration: none;
 	color: #25133d;
-	padding: 10px 0;
+	padding: 0.625rem 0; /*10px*/
 	display: block;
 }
 
 @media screen and (min-width: 700px) {
 	.menu a {
-		padding: 22px 10px;
+		padding: 1.375rem 0.625rem; /*22px 10px*/
 	}
 }
 
 @media screen and (min-width: 960px) {
 	.menu a {
-		padding: 22px 35px;
+		padding: 1.375rem 2.1875rem; /*22px 35px*/
 	}
 }
 
 .menu a:hover {
 	background-color: #48418e;
 	color: white;
-	padding: 10px 0;
+	padding: 0.625rem 0; /*10px*/
 }
 
 @media screen and (min-width: 700px) {
 	.menu a:hover {
-		padding: 22px 10px;
+		padding: 1.375rem 0.625rem; /*22px 10px*/
 	}
 }
 
 @media screen and (min-width: 960px) {
 	.menu a:hover {
-		padding: 22px 35px;
+		padding: 1.375rem 2.1875rem; /*22px 35px*/
 	}
 }
 
 .menu li:first-child {
 	font-weight: bold;
-	padding: 10px 0;
+	padding: 0.625rem 0; /*10px*/
 }
 
 @media screen and (min-width: 700px) {
 	.menu li:first-child {
-		padding: 22px 10px 20px 0;
+		padding: 1.375rem 0.625rem 1.25rem 0; /*22px 10px 20px*/
 	}
 }
 
 @media screen and (min-width: 960px) {
 	.menu li:first-child {
-		padding: 22px 35px 22px 0;
+		padding: 1.375rem 2.1875rem 1.375rem 0; /*22px 35px 22px*/
 	}
 }
 
@@ -145,12 +145,12 @@ body {
 	background-position: center;
 	background-size: cover;
 	color: white;
-	min-height: 450px;
+	min-height: 28.125rem; /*450px*/
 }
 
 @media screen and (min-width: 960px) {
 	.hero {
-		padding-left: 40px;
+		padding-left: 2.5rem; /*40px*/
 		display: flex;
 		justify-content: space-between;
 	}
@@ -169,7 +169,7 @@ body {
 }
 
 .hero .prava {
-	margin-top: 20px;
+	margin-top: 1.25rem; /*20px*/
 }
 
 @media screen and (min-width: 960px) {
@@ -181,26 +181,26 @@ body {
 }
 
 .hero h1 {
-	margin: 0 0 20px 0;
-	font-size: 60px;
+	margin: 0 0 1.25rem 0; /*20px*/
+	font-size: 3.75rem; /*60px*/
 	font-weight: 400;
 }
 
 @media screen and (min-width: 960px) {
 	.hero h1 {
-		font-size: 90px;
+		font-size: 5.625rem; /*90px*/
 	}
 }
 
 .hero p {
-	font-size: 36px;
+	font-size: 2.25rem; /*36px*/
 	font-weight: 300;
-	margin: 20px 0 36px 0;
+	margin: 1.25rem 0 2.25rem 0; /*20px 36px*/
 }
 
 @media screen and (min-width: 960px) {
 	.hero p {
-		margin: 20px 0;
+		margin: 1.25rem 0; /*20px*/
 	}
 }
 
@@ -217,8 +217,8 @@ body {
 }
 
 .hero .button + .button {
-	margin-top: 10px;
-	margin-left: 22px;
+	margin-top: 0.625rem; /*10px*/
+	margin-left: 1.375rem; /*22px*/
 }
 
 @media screen and (min-width: 960px) {
@@ -233,11 +233,11 @@ body {
 
 .button a {
 	border: 1px solid white;
-	font-size: 20px;
+	font-size: 1.25rem; /*20px*/
 	color: white;
 	text-decoration: none;
 	border-radius: 10px;
-	padding: 16px 30px;
+	padding: 1rem 1.875rem; /*16px 30px*/
 	display: inline-block;
 }
 
@@ -247,7 +247,7 @@ body {
 
 @media screen and (min-width: 700px) {
 	.obsah {
-		margin: 40px;
+		margin: 2.5rem; /*40px*/
 	}
 }
 
@@ -255,13 +255,13 @@ body {
 	.obsah {
 		display: flex;
 		justify-content: space-between;
-		margin: 20px 40px;
+		margin: 1.25rem 2.5rem; /*20px 40px*/
 	}
 }
 
 .col {
 	text-align: center;
-	margin: 20px 0;
+	margin: 1.25rem 0; /*20px*/
 }
 
 @media screen and (min-width: 700px) {
@@ -269,15 +269,15 @@ body {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		gap: 10px;
+		gap: 0.625rem; /*10px*/
 	}
 }
 
 @media screen and (min-width: 960px) {
 	.col {
 		display: block;
-		flex: 0 0 calc((100% - 120px) / 3);
-		margin: 20px;
+		flex: 0 0 calc((100% - 7.5rem) / 3); /*120px*/
+		margin: 1.25rem; /*20px*/
 	}
 }
 
@@ -301,18 +301,18 @@ body {
 }
 
 .nazev {
-	font-size: 20px;
+	font-size: 1.25rem; /*20px*/
 	font-weight: 700;
 }
 
 .icon {
-	max-width: 100px;
+	max-width: 100px; /*px*/
 	border-radius: 50%;
 }
 
 @media screen and (min-width: 960px) {
 	.icon {
-		max-width: 70px;
+		max-width: 4.375rem; /*70px*/
 	}
 }
 
@@ -323,11 +323,11 @@ body {
 .obsah-paticka {
 	color: white;
 	text-align: center;
-	padding: 1px 0;
+	padding: 0.0625rem 0; /*1px*/
 }
 
 @media screen and (min-width: 700px) {
 	.obsah-paticka {
-		font-size: 14px;
+		font-size: 0.875rem; /*14px*/
 	}
 }
